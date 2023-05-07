@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<resources>
+
+
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="grey">#C9C7C7</color>
+
+    <color name="lightgrey">#75E3E3E3</color>
+
+    <color name="primaryColor">#fff59d</color>
+
+    <color name="primaryLightColor">#ffffcf</color>
+
+    <color name="primaryDarkColor">#cbc26d</color>
+
+    <color name="secondaryColor">#FF8000</color>
+
+    <color name="secondaryColorDesvilitado">#BA9C8E81</color>
+
+    <color name="secondaryLightColor">#ffc947</color>
+
+    <color name="secondaryDarkColor">#c66900</color>
+
+    <color name="primaryTextColor">#2C2C2C</color>
+
+    <color name="secondaryTextColor">#2C2C2C</color>
+
+
+    <color name="blue_color_picker">#0066FF</color>
+    <color name="brown_color_picker">#AF593E</color>
+    <color name="green_color_picker">#01A368</color>
+    <color name="orange_color_picker">#FF861F</color>
+    <color name="red_color_picker">#ED0A3F</color>
+    <color name="red_orange_color_picker">#FF3F34</color>
+    <color name="sky_blue_color_picker">#76D7EA</color>
+    <color name="violet_color_picker">#8359A3</color>
+    <color name="yellow_color_picker">#FBE870</color>
+    <color name="yellow_green_color_picker">#C5E17A</color>
+
+    <color name="dificultad_1">#5F5E62</color>
+    <color name="dificultad_2">#2196F3</color>
+    <color name="dificultad_3">#8E61DE</color>
+    <color name="dificultad_4">#E91E63</color>
+    <color name="dificultad_5">#4CAF50</color>
+    <color name="dificultad_6">#FFC107</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+
+
+</resources>

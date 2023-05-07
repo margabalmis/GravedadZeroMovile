@@ -1,0 +1,14 @@
+<resources>
+
+    <style name="Widget.Theme.MyApplication.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+    <style name="CustomChipChoice" parent="@style/Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/chip_background_selector</item>
+        <item name="chipStrokeColor">@color/chip_background_selector</item>
+        <item name="chipStrokeWidth">2dp</item>
+    </style>
+
+</resources>

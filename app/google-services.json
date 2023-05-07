@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "903734689274",
+    "project_id": "gravedad-zero-f1b21",
+    "storage_bucket": "gravedad-zero-f1b21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903734689274:android:608f262ee53e0d5ddc3843",
+        "android_client_info": {
+          "package_name": "com.example.gravedadzero"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "903734689274-pegkthall8ol4shdih19hc52s7t9u0o5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqd6QdSMSgl1K7-Kt3h7JoQQi8xmtxiFU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "903734689274-pegkthall8ol4shdih19hc52s7t9u0o5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

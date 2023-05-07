@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/bloquesFragment">
+
+    <fragment
+        android:id="@+id/bloquesFragment"
+        android:name="com.example.gravedadzero.view.BloquesFragment"
+        android:label="fragment_mis_proyectos"
+        tools:layout="@layout/fragment_mis_proyectos" >
+        <action
+            android:id="@+id/action_bloquesFragment_to_misProyectosFragment"
+            app:destination="@id/misProyectosFragment" />
+        <action
+            android:id="@+id/action_bloquesFragment_to_areaPersonalFragment"
+            app:destination="@id/areaPersonalFragment" />
+        <action
+            android:id="@+id/action_bloquesFragment_to_noticiasFragment"
+            app:destination="@id/noticiasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/areaPersonalFragment"
+        android:name="com.example.gravedadzero.view.AreaPersonalFragment"
+        android:label="AreaPersonalFragment" >
+        <action
+            android:id="@+id/action_areaPersonalFragment_to_bloquesFragment"
+            app:destination="@id/bloquesFragment" />
+        <action
+            android:id="@+id/action_areaPersonalFragment_to_noticiasFragment"
+            app:destination="@id/noticiasFragment" />
+        <action
+            android:id="@+id/action_areaPersonalFragment_to_misProyectosFragment"
+            app:destination="@id/misProyectosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noticiasFragment"
+        android:name="com.example.gravedadzero.view.NoticiasFragment"
+        android:label="fragment_noticias_"
+        tools:layout="@layout/fragment_noticias_" >
+        <action
+            android:id="@+id/action_noticiasFragment_to_bloquesFragment"
+            app:destination="@id/bloquesFragment" />
+        <action
+            android:id="@+id/action_noticiasFragment_to_areaPersonalFragment"
+            app:destination="@id/areaPersonalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/misProyectosFragment"
+        android:name="com.example.gravedadzero.view.MisProyectosFragment"
+        android:label="MisProyectosFragment" >
+        <action
+            android:id="@+id/action_misProyectosFragment_to_bloquesFragment"
+            app:destination="@id/bloquesFragment" />
+        <action
+            android:id="@+id/action_misProyectosFragment_to_noticiasFragment"
+            app:destination="@id/noticiasFragment" />
+    </fragment>
+</navigation>

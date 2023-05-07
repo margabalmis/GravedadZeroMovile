@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:backgroundTint="@color/primaryLightColor"
+    app:cardCornerRadius="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/date_picker_actions"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:startIconDrawable="@drawable/ic_baseline_calendar_month_24">
+
+            <AutoCompleteTextView
+                android:id="@+id/fechasTV"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/primaryColor"
+                android:inputType="date"
+                tools:ignore="LabelFor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:scrollbars="horizontal"
+                app:chipSpacingHorizontal="32dp"
+                app:singleLine="true"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/dificultad_1"
+                    style="@style/CustomChipChoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    app:chipIcon="@drawable/ic_round_rectangle_24"
+                    app:chipIconSize="32dp"
+                    app:chipIconTint="@color/dificultad_1"
+                    app:chipIconVisible="true"
+                    app:chipStartPadding="16dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/dificultad_2"
+                    style="@style/CustomChipChoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:chipIcon="@drawable/ic_round_rectangle_24"
+                    app:chipIconSize="32dp"
+                    app:chipIconTint="@color/dificultad_2"
+                    app:chipIconVisible="true"
+                    app:chipStartPadding="16dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/dificultad_3"
+                    style="@style/CustomChipChoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:chipIcon="@drawable/ic_round_rectangle_24"
+                    app:chipIconSize="32dp"
+                    app:chipIconTint="@color/dificultad_3"
+                    app:chipIconVisible="true"
+                    app:chipStartPadding="16dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/dificultad_4"
+                    style="@style/CustomChipChoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:chipIcon="@drawable/ic_round_rectangle_24"
+                    app:chipIconSize="32dp"
+                    app:chipIconTint="@color/dificultad_4"
+                    app:chipIconVisible="true"
+                    app:chipStartPadding="16dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/dificultad_5"
+                    style="@style/CustomChipChoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:chipIconSize="32dp"
+                    app:chipStartPadding="16dp"
+                    app:chipIcon="@drawable/ic_round_rectangle_24"
+                    app:chipIconTint="@color/dificultad_5"
+                    app:chipIconVisible="true" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/dificultad_6"
+                    style="@style/CustomChipChoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:chipIcon="@drawable/ic_round_rectangle_24"
+                    app:chipIconSize="32dp"
+                    app:chipIconTint="@color/dificultad_6"
+                    app:chipIconVisible="true"
+                    app:chipStartPadding="16dp"
+                    android:layout_marginEnd="80dp"/>
+
+            </com.google.android.material.chip.ChipGroup>
+
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/buscarBulder"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/buscar"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:backgroundTint="@color/primaryLightColor">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/bloqueImagen"
+                    android:contentDescription="@string/bulder"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/fechaTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="580dp"
+                    />
+
+                <TextView
+                    android:id="@+id/fechaTV"
+                    app:layout_constraintTop_toBottomOf="@+id/bloqueImagen"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp"
+                    android:layout_marginStart="32dp"
+                    android:textSize="12sp"
+                    tools:text="@string/_10_10_22"/>
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    app:layout_constraintTop_toBottomOf="@id/bloqueImagen"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/a_mis_proyectos"
+                        android:textSize="12sp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/bajarProyectoMB"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:layout_gravity="center"
+                        app:strokeWidth="1dp"
+                        app:strokeColor="@color/secondaryColor"
+                        app:icon="@drawable/baseline_downloading_24"
+                        app:iconTint="@color/dificultad_1"
+                        app:cornerRadius="18dp"
+                        android:backgroundTint="@color/primaryLightColor"
+                        app:iconSize="48dp"
+                        android:elevation="0.87dp"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <LinearLayout
+                    app:layout_constraintTop_toBottomOf="@id/fechaTV"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="16dp"
+                    android:layout_marginHorizontal="32dp"
+                    android:layout_marginBottom="36dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/nombreTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="8dp"
+                        tools:text="@string/nombre"
+                        android:textSize="16sp" />
+
+                        <androidx.constraintlayout.utils.widget.ImageFilterButton
+                            android:id="@+id/dificultadBtt"
+                            android:layout_width="64dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/ic_round_rectangle_24"
+                            tools:backgroundTint="@android:color/holo_purple" />
+
+
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+

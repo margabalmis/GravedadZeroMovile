@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/primaryLightColor"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/fotoBulder"
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:background="@drawable/ic_add_24"
+            android:backgroundTint="@color/primaryDarkColor"
+            android:contentDescription="@string/foto_cargada_con_el_bulder_editado"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_margin="16dp"
+            android:id="@+id/nombreBulder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nombre_del_bulder"
+            android:layout_marginVertical="8dp"
+            app:boxStrokeColor="@color/secondaryColor"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nombreBulderTI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+<HorizontalScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:scrollbars="horizontal"
+        app:chipSpacingHorizontal="32dp"
+        app:singleLine="true"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/dificultad_1"
+            style="@style/CustomChipChoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            app:chipIcon="@drawable/ic_round_rectangle_24"
+            app:chipIconSize="32dp"
+            app:chipIconTint="@color/dificultad_1"
+            app:chipIconVisible="true"
+            app:chipStartPadding="16dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/dificultad_2"
+            style="@style/CustomChipChoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipIcon="@drawable/ic_round_rectangle_24"
+            app:chipIconSize="32dp"
+            app:chipIconTint="@color/dificultad_2"
+            app:chipIconVisible="true"
+            app:chipStartPadding="16dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/dificultad_3"
+            style="@style/CustomChipChoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipIcon="@drawable/ic_round_rectangle_24"
+            app:chipIconSize="32dp"
+            app:chipIconTint="@color/dificultad_3"
+            app:chipIconVisible="true"
+            app:chipStartPadding="16dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/dificultad_4"
+            style="@style/CustomChipChoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipIcon="@drawable/ic_round_rectangle_24"
+            app:chipIconSize="32dp"
+            app:chipIconTint="@color/dificultad_4"
+            app:chipIconVisible="true"
+            app:chipStartPadding="16dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/dificultad_5"
+            style="@style/CustomChipChoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipIconSize="32dp"
+            app:chipStartPadding="16dp"
+            app:chipIcon="@drawable/ic_round_rectangle_24"
+            app:chipIconTint="@color/dificultad_5"
+            app:chipIconVisible="true" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/dificultad_6"
+            style="@style/CustomChipChoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipIcon="@drawable/ic_round_rectangle_24"
+            app:chipIconSize="32dp"
+            app:chipIconTint="@color/dificultad_6"
+            app:chipIconVisible="true"
+            app:chipStartPadding="16dp"
+            android:layout_marginEnd="80dp"/>
+
+    </com.google.android.material.chip.ChipGroup>
+
+</HorizontalScrollView>
+
+        <Button
+            android:id="@+id/guardarBulder"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_gravity="end"
+            android:text="@string/guardar"
+            android:textSize="18sp" />
+    </LinearLayout>
+</ScrollView>
+
+
