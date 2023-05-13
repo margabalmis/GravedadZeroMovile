@@ -13,7 +13,7 @@
         <activity
             android:name="com.example.gravedadzero.view.LoginActivity"
             android:exported="true"
-            android:label="LoginActivity"
+            android:label="GZero"
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

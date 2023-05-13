@@ -40,7 +40,8 @@
     <color name="red_orange_color_picker">#FF3F34</color>
     <color name="sky_blue_color_picker">#76D7EA</color>
     <color name="violet_color_picker">#8359A3</color>
-    <color name="yellow_color_picker">#FBE870</color>
+    <color name="yellow_color_picker">#AFFFF59D</color>
+    <color name="amarilloclaro">#67C66900</color>
     <color name="yellow_green_color_picker">#C5E17A</color>
 
     <color name="dificultad_1">#5F5E62</color>

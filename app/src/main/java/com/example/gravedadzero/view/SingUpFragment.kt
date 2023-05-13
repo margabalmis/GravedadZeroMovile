@@ -58,7 +58,8 @@ class SingUpFragment : Fragment() {
         //Validaciones
         manageButonLogin()
         etEmail.doOnTextChanged { text, start, before, count -> manageButonLogin() }
-        etPassword.doOnTextChanged { text, start, before, count -> manageButonLogin() }
+        etPassword.doOnTextChanged { text,
+                                     start, before, count -> manageButonLogin() }
     }
 
     private fun manageButonLogin() {

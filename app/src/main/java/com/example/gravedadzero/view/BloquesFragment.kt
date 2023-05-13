@@ -74,7 +74,7 @@ class BloquesFragment : Fragment(){
 
         adapter!!.adapterOnLongClick(){
             val admin = Firebase.auth.currentUser!!.email
-            if(admin=="gravedadzero@gmail.com"){
+            if(admin=="gz@gmail.com"){
                 val docRef = adapter!!.snapshots.getSnapshot(binding.recyclerBloques.getChildAdapterPosition(it)).reference
                 docRef.delete()
             }

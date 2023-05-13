@@ -55,7 +55,7 @@ class NoticiasFragment : Fragment(){
         adapter!!.adapterOnLongClick{
             val isAdmin = user.email
             val docRef = adapter!!.snapshots.getSnapshot(binding.recyclerNew.getChildAdapterPosition(it)).reference
-            if(isAdmin == "gravedadzero@gmail.com") {
+            if(isAdmin == "gz@gmail.com") {
                 docRef.delete().addOnSuccessListener {
                     Toast.makeText(requireActivity(),"Noticia eliminada",Toast.LENGTH_SHORT).show()
                 }
