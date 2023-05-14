@@ -176,7 +176,7 @@ class EditImageActivity : BaseActivity(), OnPhotoEditorListener, View.OnClickLis
     private fun saveImage() {
         lifecycleScope.launch {
             val bitmap = mPhotoEditor.saveAsBitmap()
-            fotoEditada = bitmap
+            fotoEditada = Bitmap.createScaledBitmap(bitmap!!, bitmap.width/2, bitmap.height/2, true)
             goMainActivity( )
         }
     }
@@ -197,7 +197,7 @@ class EditImageActivity : BaseActivity(), OnPhotoEditorListener, View.OnClickLis
                     val bitmap = MediaStore.Images.Media.getBitmap(
                         contentResolver, uri
                     )
-                    val scaledBitmap = Bitmap.createScaledBitmap(bitmap!!, bitmap.width*9, bitmap.height*9, true)
+                    val scaledBitmap = Bitmap.createScaledBitmap(bitmap!!, bitmap.width*8, bitmap.height*9, true)
                     mPhotoEditorView.source.setImageBitmap(scaledBitmap)
                 } catch (e: IOException) {
                     e.printStackTrace()
