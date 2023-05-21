@@ -13,11 +13,11 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.core.widget.doOnTextChanged
-import androidx.navigation.fragment.NavHostFragment
 import com.example.gravedadzero.R
 import com.example.gravedadzero.databinding.FragmentLoginBinding
 import com.example.gravedadzero.model.*
 import com.example.gravedadzero.network.DataBase
+import com.example.gravedadzero.utils.ValidateEmail
 import com.google.firebase.auth.FirebaseAuth
 
 

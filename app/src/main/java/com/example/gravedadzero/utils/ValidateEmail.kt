@@ -1,4 +1,4 @@
-package com.example.gravedadzero.model
+package com.example.gravedadzero.utils
 
 import java.util.regex.Matcher
 import java.util.regex.Pattern

@@ -15,7 +15,7 @@ import android.widget.ImageView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.lifecycle.lifecycleScope
 import com.example.gravedadzero.R
-import com.example.gravedadzero.adapter.BaseActivity
+import com.example.gravedadzero.utils.BaseActivity
 import com.example.gravedadzero.utils.FileSaveHelper
 import com.example.gravedadzero.utils.PropertiesBSFragment
 import com.example.gravedadzero.utils.ShapeBSFragment

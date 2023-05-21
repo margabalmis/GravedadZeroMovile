@@ -1,4 +1,4 @@
-package com.example.gravedadzero.adapter
+package com.example.gravedadzero.utils
 
 import android.view.Window
 import android.view.WindowManager

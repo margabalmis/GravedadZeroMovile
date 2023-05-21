@@ -17,9 +17,9 @@ import com.example.gravedadzero.R
 import com.example.gravedadzero.databinding.FragmentSingUpBinding
 import com.example.gravedadzero.model.*
 import com.example.gravedadzero.network.DataBase
+import com.example.gravedadzero.utils.ValidateEmail
 import com.example.gravedadzero.view.LoginFragment.Companion.user
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.firestore.FirebaseFirestore
 
 
 class SingUpFragment : Fragment() {

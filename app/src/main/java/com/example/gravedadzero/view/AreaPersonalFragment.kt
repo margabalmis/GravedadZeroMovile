@@ -1,23 +1,18 @@
 package com.example.gravedadzero.view
 
 import android.annotation.SuppressLint
-import android.content.ContentValues.TAG
-import android.content.res.ColorStateList
 import android.os.Bundle
 import android.text.TextUtils
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
-import androidx.core.content.ContextCompat
 import androidx.core.widget.doOnTextChanged
 import androidx.fragment.app.Fragment
-import com.example.gravedadzero.R
 import com.example.gravedadzero.databinding.FragmentAreaPersonalBinding
-import com.example.gravedadzero.model.ValidateEmail
+import com.example.gravedadzero.utils.ValidateEmail
 import com.example.gravedadzero.view.LoginFragment.Companion.user
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.auth.EmailAuthProvider
